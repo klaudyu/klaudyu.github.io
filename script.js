@@ -7,9 +7,9 @@ canvas.height = window.innerHeight;
 
 const img = new Image();
 img.src = 'waves.jpg';
-img.onload = function() {
+/*img.onload = function() {
 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-}
+}*/
 
 
 function changeSaturation(color, saturation) {
@@ -394,7 +394,7 @@ for (let i = 0; i < 100; i++) {
 
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  //ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
   balls.forEach((ball) => {
     ball.update(balls);
   });
