@@ -5,11 +5,11 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 
-/*const img = new Image();
+const img = new Image();
 img.src = 'waves.jpg';
 img.onload = function() {
 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-}*/
+}
 
 
 function changeSaturation(color, saturation) {
